@@ -1,12 +1,12 @@
 # DimonGen: Diversified Generative Commonsense Reasoning for Explaining Concept Relationships
 
+## MoREE: Mixture of Retrieval-Enhanced Experts
+
+![image](https://user-images.githubusercontent.com/47152740/219499937-abdaf47e-443c-46f0-96ce-dedb01d3ee00.png)
+
 ## Data
 
 Our extracted DimonGen dataset is vailable at here: [dataset](data/DimonGen).
-
-## MoREE: Mixture of Retrieval-Enhanced Experts
-
-![MoREE framwork](doc/model.pdf)
 
 ## Environment
 
@@ -26,3 +26,14 @@ python main.py
 ```
 
 To run baseline methods, you need to set the method_name to different baseline methods.
+
+## Citation
+
+```
+@article{liu2022dimongen,
+  title={DimonGen: Diversified Generative Commonsense Reasoning for Explaining Concept Relationships},
+  author={Liu, Chenzhengyi and Huang, Jie and Zhu, Kerui and Chang, Kevin Chen-Chuan},
+  journal={arXiv preprint arXiv:2212.10545},
+  year={2022}
+}
+```
