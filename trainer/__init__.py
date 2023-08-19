@@ -109,7 +109,6 @@ class Trainer():
                     inp = match_concepts(line["inputs"], nlp, cp_vocab, cp2id)
                     lab = match_concepts(line["labels"], nlp, cp_vocab, cp2id)
                     nodes, edges, query, labels = construct_neighbor_graph(cpnet, inp, lab)
-                    nodes = [self.tokenizer.encode(id2cp[n], add_special_tokens=False)[0] for n in nodes]
                     if TYPE == "train":
                         line_inputs = [tokenizer.encode(" ".join(line["inputs"]), max_length=self.args.max_sentence_len) for i in line["labels"]]
                         line_labels = [tokenizer.encode(i, max_length=self.args.max_sentence_len) for i in line["labels"]]
